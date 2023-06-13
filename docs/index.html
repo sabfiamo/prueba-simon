@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simon Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+    <link rel="icon" href="./assets/images/favicon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Original+Surfer&display=swap" rel="stylesheet">
+
+    <!---audios del juego--->
+    <audio id="clip1">
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound1.mp3">
+      </source>
+    </audio>
+    <audio id="clip2">
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound2.mp3">
+      </source>
+    </audio>
+    <audio id="clip3">
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound3.mp3">
+      </source>
+    </audio>
+    <audio id="clip4">
+      <source src="https://s3.amazonaws.com/freecodecamp/simonSound4.mp3">
+      </source>
+    </audio>
+  </head>
+
+  <body>
+      <!---¿por qué id en vez de clases? así me aseguro que el elemento es único y puedo conectarlo con el sonido correspondiente, una class puede aparecer en múltiples elementos---->
+    <div id="outer-circle"> <!----círculo negro exterior--->
+      <div id="topleft"></div>
+      <div id="topright"></div>
+      <div id="bottomleft"></div>
+      <div id="bottomright"></div>
+    
+      <div id="inner-circle"><!----círculo gris interior donde irán los botones--->
+        <div id="title" class="font-effect-emboss">SIMON!</div>
+        <div id="switches">
+          <input type="checkbox" class="toggle" id="on">
+          <button class="button" id="start">Start</button>
+          <input type="checkbox" class="toggle" id="strict">
+        </div>
+        <div class="text1">
+          <span>POWER</span><span>STRICT</span>
+        </div>
+        <div id="turn"></div><!---el contador--->
+        <div class="text2">
+          COUNT
+        </div>
+      </div>
+    </div>
+  <section class="instruction">
+      <h2 class="instruction__title">HOW TO PLAY?</h2>
+      <ul class="instruction__list">
+        <li class="instruction__item">Select the power button</li>
+        <li class="instruction__item">Press start</li>
+        <li class="instruction__item">The computer will give you a sequence of color and sound that you will have to replicate</li>
+        <li class="instruction__item">If you fail, the computer will replicate the last sequence for you to try again</li>
+        <li class="instruction__item">Strict mode will only allow you one miss, then restart the game</li>
+        <li class="instruction__item">You have to replicate 10 rounds to win</li>
+      </ul>
+      <p class="instruction__text"><strong>Let's Play!</strong></p>
+    </section>
+    <script src="./assets/js/main.js"></script>
+  </body>
+</html>

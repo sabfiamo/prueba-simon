@@ -1,0 +1,204 @@
+
+@import 'core/reset';
+
+
+body {
+    background-image:url(../images/47074.jpg);
+}
+
+.toggle {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.button {
+    border-radius: 50%;
+    font-size: 1.5em;
+    padding: 0.3rem;
+    background-color: lightgray;
+}
+
+#switches {
+    position: absolute;
+    font-family: 'Original Surfer', cursive;
+    margin-left: 26px;
+    margin-top: 110px;
+}
+
+.text2 {
+    position: absolute;
+    font-family: 'Original Surfer', cursive;
+    margin-left: 83px;
+    margin-top: 197px;
+}
+
+.text1 {
+    position: absolute;
+    font-family: 'Original Surfer', cursive;
+    margin-left: 19px;
+    margin-top: 142px;
+}
+
+.text1 span:last-child {
+    padding-left: 70px;
+}
+
+#title {
+    font-family: 'Original Surfer', cursive;
+    position: absolute;
+    font-size: 40px;
+    margin-left: 35px;
+    margin-top: 40px;
+}
+
+#turn {
+    position: absolute;
+    background: #330000;
+    color: red;
+    font-family: courier;
+    font-size: 20px;
+    height: 30px;
+    width: 50px;
+    margin-left: 90px;
+    margin-top: 170px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 30px;
+}
+
+#outer-circle {
+    background: #385a94;
+    border-radius: 50%;
+    height: 500px;
+    width: 500px;
+    position: relative;
+    border-style: solid;
+    border-width: 10px;
+    margin: auto;
+    margin-top: 60px;
+    box-shadow: 8px 8px 15px 5px #383636;
+}
+
+#topleft {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 250px 0 0 0;
+    -moz-border-radius: 250px 0 0 0;
+    -webkit-border-radius: 250px 0 0 0;
+    background: darkgreen;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0px 0px -250px;
+    border-style: solid;
+    border-width: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#topright {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 0 250px 0 0;
+    -moz-border-radius: 0 250px 0 0;
+    -webkit-border-radius: 0 250px 0 0;
+    background: darkred;
+    top: 50%;
+    left: 50%;
+    margin: -250px 0px 0px 0px;
+    border-style: solid;
+    border-width: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#bottomleft {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 0 0 0 250px;
+    -moz-border-radius: 0 0 0 250px;
+    -webkit-border-radius: 0 0 0 250px;
+    background: goldenrod;
+    top: 50%;
+    left: 50%;
+    margin: 0px -250px 0px -250px;
+    border-style: solid;
+    border-width: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#bottomright {
+    position: absolute;
+    height: 250px;
+    width: 250px;
+    border-radius: 0 0 250px 0;
+    -moz-border-radius: 0 0 250px 0;
+    -webkit-border-radius: 0 0 250px 0;
+    background: darkblue;
+    top: 50%;
+    left: 50%;
+    margin: 0px 0px -250px 0px;
+    border-style: solid;
+    border-width: 5px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#inner-circle {
+    position: absolute;
+    background: grey;
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+    border-style: solid;
+    border-width: 10px;
+    top: 50%;
+    left: 50%;
+    margin: -125px 0px 0px -125px;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+.instruction {
+    width: 80%;
+        /* Ajusta el ancho del border box según tus necesidades */
+        max-width: 900px;
+        /* Establece un ancho máximo para garantizar la legibilidad en pantallas grandes */
+        margin: 50px auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: solid 2px black;
+        background-color: rgba(211, 211, 211, 0.5);
+        padding: 1rem;
+        border-radius: 35px 0px 35px 0px;
+        -moz-border-radius: 35px 0px 35px 0px;
+        -webkit-border-radius: 35px 0px 35px 0px;
+
+&__title{
+    font-family: 'Original Surfer', cursive;
+    font-size: x-large;
+   
+   
+       }
+&__list{
+    font-family: 'Original Surfer', cursive;
+    line-height: 1.5;
+    padding-left: 10px;
+font-size: x-large;
+
+}
+&__text{
+    font-family: 'Original Surfer', cursive;
+    font-size: x-large;
+    }
+}
